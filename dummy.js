@@ -81,4 +81,25 @@ router.post("/setting", async (req, res, next) => {
   });
 });
 
+router.post("/responseSetting", async (req, res, next) => {
+  await delay(2000);
+  console.log(req.body);
+  res.status(200).json({
+    ok: true,
+    message: "성공했습니다.",
+    response: [
+      ["Response ID", "1140398398"],
+      ["Response ID", "1140398398"],
+      ["Response ID", "1140398398"],
+    ],
+  });
+});
+
+router.post("/condition", async (req, res, next) => {
+  await delay(2000);
+  res.status(200).json({
+    ok: true,
+  });
+});
+
 export default router;
