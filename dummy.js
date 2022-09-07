@@ -136,4 +136,18 @@ router.get("questions", async (req, res, next) => {
   });
 });
 
+router.post("/detailCondition", async (req, res, next) => {
+  await delay(2000);
+  res.status(200).json({
+    ok: true,
+  });
+});
+
+router.post("/test", async (req, res, next) => {
+  await delay(2000);
+  res.status(200).json({
+    ok: true,
+  });
+});
+
 export default router;
